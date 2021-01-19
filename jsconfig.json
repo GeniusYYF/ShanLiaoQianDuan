@@ -1,0 +1,8 @@
+// 使用VScode打开项目时报Vetur can’t find tsconfig.json, jsconfig.json in /xxxx/xxxxxx.警告
+// 0.31.0版本新增了一个vetur.config.js配置文件，在这个版本之后，
+// 会优先查找项目中是否配有tsconfig.json（ts项目）或者jsconfig.json（js项目），没找到再去找vetur.config.js，如果都没有，就会抛出这个提示。
+{
+    "include": [
+        "./src/*"
+    ]
+}
